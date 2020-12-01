@@ -1,0 +1,41 @@
+{
+    "name": "long-running/sentry",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cliff Odijk",
+            "email": "cliff@jcid.nl"
+        },
+        {
+            "name": "Ruud Kamphuis",
+            "homepage": "https://github.com/ruudk"
+        },
+        {
+            "name": "Matthias Noback",
+            "email": "matthiasnoback@gmail.com",
+            "homepage": "https://matthiasnoback.nl/"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "symfony/yaml": "^4.4 || ^5.1",
+        "long-running/core": "^1.0",
+        "psr/log": "^1.0.1",
+        "sentry/sentry-symfony": "^3.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "LongRunning\\Sentry\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LongRunning\\Sentry\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
